@@ -1,0 +1,27 @@
+.container {
+    position: absolute;
+    bottom: 0;
+    align-items: flex-end;
+    width: 100%;
+    padding-left: 56px;
+    z-index: 1;
+}
+
+.column {
+    min-height: 5px;
+    width: 100%;
+    max-width: 77px;
+    background-color: #c4c4c4;
+}
+
+.columnLightRed {
+    background-color: #ea8a79;
+}
+
+.columnRed {
+    background-color: #dc3e22;
+}
+
+.column:not(:last-child) {
+    margin-right: 32px;
+}

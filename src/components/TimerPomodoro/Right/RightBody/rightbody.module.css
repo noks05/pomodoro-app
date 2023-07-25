@@ -1,0 +1,94 @@
+.body {
+    padding: 0px 80px;
+    padding-top: 70px;
+    padding-bottom: 107px;
+}
+
+.timer {
+    position: relative;
+    font-weight: 200;
+    font-size: 150px;
+    line-height: 179px;
+    transition: color .2s ease-in-out;
+}
+
+.plus {
+    position: absolute;
+    top: 50%;
+    right: -70px;
+    padding: 0;
+    transform: translateY(-70%);
+}
+
+.plus svg circle {
+    transition: fill .2s ease-in-out;
+}
+
+.plus:hover svg circle {
+    fill: #899441;
+}
+
+.task {
+    margin-bottom: 32px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+}
+
+.task>span {
+    color: #999;
+}
+
+.btnStart {
+    margin-right: 25px;
+}
+
+.btnStart[class*="disabled"] {
+    background-color: #c4c4c4;
+    pointer-events: none;
+}
+
+.btnStop {
+    border: 2px solid #dc3e22;
+    color: #dc3e22;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.btnStop:hover {
+    background-color: #dc3e22;
+    color: #fff;
+}
+
+.btnStop[class*="disabled"] {
+    border: 2px solid #c4c4c4;
+    color: #c4c4c4;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.btnMute {
+    position: relative;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 100px;
+}
+
+.btnMute span {
+    position: absolute;
+    background-color: #f4f4f4;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.btnMute span[class^='icon-bell-off-empty'] {
+    left: 5px;
+    opacity: 0;
+}
+
+.btnMute[class*="active"] span[class^='icon-bell-off-empty'] {
+    opacity: 1;
+}

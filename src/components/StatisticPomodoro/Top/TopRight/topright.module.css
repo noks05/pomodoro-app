@@ -1,0 +1,6 @@
+.container {
+    min-width: 952px;
+    min-height: 471px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}

@@ -1,0 +1,51 @@
+.box {
+    min-height: 179px;
+    min-width: 405px;
+    padding: 25px;
+    padding-right: 25px;
+}
+
+.box[class*="empty"] {
+    background-color: #f4f4f4;
+}
+
+.box>svg {
+    height: 100%;
+    width: 108px;
+}
+
+.box[class*="empty"] svg path {
+    stroke: #c4c4c4;
+}
+
+.box:not(:last-child) {
+    margin-right: 32px;
+}
+
+.boxFocus {
+    background-color: #ffdda9;
+}
+
+.boxPause {
+    background-color: #dfdcfe;
+}
+
+.boxStop {
+    background-color: #c5f1ff;
+}
+
+.textWrap {
+    margin-right: 15px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+}
+
+.number {
+    font-size: 64px;
+    font-weight: 4700;
+    line-height: 76px;
+}

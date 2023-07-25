@@ -1,0 +1,35 @@
+.addTaskForm {
+    margin-bottom: 25px;
+}
+
+.addInput {
+    position: relative;
+    display: flex;
+    max-width: 370px;
+    margin-bottom: 25px;
+}
+
+.addInput>input {
+    min-height: 55px;
+    width: 100%;
+    padding: 0 15px;
+    background-color: #f4f4f4;
+}
+
+.addInput>input+span {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 17px;
+    color: #999;
+    transform: translateY(-50%);
+    transition: top .2s ease-in-out, font-size .2s ease-in-out;
+}
+
+.addInput>input:focus+span,
+.addInput>input[class="active"]+span {
+    top: 21%;
+    font-size: 13px;
+}

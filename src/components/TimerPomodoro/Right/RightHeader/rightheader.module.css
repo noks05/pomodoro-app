@@ -1,0 +1,18 @@
+.header {
+    padding: 19px 40px;
+    font-size: 16px;
+    line-height: 17px;
+    background-color: #c4c4c4;
+    transition: background-color .2s ease-in-out;
+}
+
+.title {
+    max-width: 550px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.tomatoCount {
+    font-weight: 400;
+    color: #fff;
+}

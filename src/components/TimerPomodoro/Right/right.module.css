@@ -1,0 +1,35 @@
+.right {
+    min-width: 733px;
+    max-height: 507px;
+    background-color: #f4f4f4;
+}
+
+.right[class*="work"] div[class*="_header__"],
+.right[class*="pause"] div[class*="_header__"] {
+    background-color: #dc3e22;
+}
+
+.right[class*="break-work"] div[class*="_header__"],
+.right[class*="break-pause"] div[class*="_header__"] {
+    background-color: #a8b64f;
+}
+
+.right[class*="work"] div[class*="_timer__"] div[class*="_min__"]::before,
+.right[class*="work"] div[class*="_timer__"] div[class*="_min__"]::after {
+    background-color: #dc3e22;
+}
+
+.right[class*="break-work"] div[class*="_timer__"] div[class*="_min__"]::before,
+.right[class*="break-work"] div[class*="_timer__"] div[class*="_min__"]::after {
+    background-color: #a8b64f;
+}
+
+.right[class*="work"] div[class*="_timer__"],
+.right[class*="work"] div[class*="_timer__"] {
+    color: #dc3e22;
+}
+
+.right[class*="break-work"] div[class*="_timer__"],
+.right[class*="break-work"] div[class*="_timer__"] {
+    color: #a8b64f;
+}

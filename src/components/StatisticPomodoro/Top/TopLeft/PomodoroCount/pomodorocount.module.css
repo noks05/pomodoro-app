@@ -1,0 +1,41 @@
+.bottom {
+    min-height: 179px;
+    background-color: #F4F4F4;
+}
+
+.wrapCount {
+    min-height: 179px;
+    background-color: transparent;
+}
+
+.img {
+    flex: 1;
+    height: 100%;
+}
+
+.img>svg {
+    height: 81px;
+    width: 81px;
+}
+
+.increment {
+    padding-left: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #999;
+}
+
+.text {
+    padding: 9px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #fff;
+    background-color: #dc3e22;
+}
+
+.pomodoroSmile {
+    height: 100%;
+}

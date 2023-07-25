@@ -1,0 +1,50 @@
+.darkMode {
+    position: relative;
+    padding: 10px 15px;
+    padding-left: 45px;
+    border: 2px solid #333;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #222;
+    overflow: hidden;
+}
+
+.day {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-left: 14px;
+    border-radius: 100px;
+    color: #333;
+    background-color: #fff;
+    transform: translateX(-76%);
+    transition: transform .5s ease-out;
+}
+
+body[class*="dark-mode"] .day {
+    transform: translateX(0%);
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 36px;
+    width: 36px;
+    border: 2px solid #333;
+    border-radius: 100px;
+    color: #333;
+    background-color: #fff;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.icon[class*="icon-moon"] {
+    transition: opacity .3s ease-in-out;
+}
+
+body[class*="dark-mode"] [class*="icon-moon"] {
+    opacity: 0;
+}

@@ -1,0 +1,70 @@
+.controls {
+    position: absolute;
+    padding: 6px 0;
+    border: 1px solid #c4c4c4;
+    background-color: #fff;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+
+.controls:after, .controls:before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translateX(-50%);
+}
+
+.controls:before {
+    border-width: 0 7px 7px 7px;
+    border-color: transparent transparent #c4c4c4 transparent;
+    border-style: solid;
+}
+
+.controls:after {
+    top: -5px;
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent #fff transparent;
+    border-style: solid;
+}
+
+.item {
+    width: 100%;
+    padding: 10px 15px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 17px;
+    color: #999;
+    transition: background-color .2s ease-in-out;
+}
+
+.item:hover {
+    background-color: #f4f4f4;
+}
+
+.icon {
+    height: 18px;
+    width: 18px;
+    margin-right: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.iconPlus {
+    background-image: url('../../../../../../img/plus.svg');
+}
+
+.iconMinus {
+    background-image: url('../../../../../../img/minus.svg');
+}
+
+.iconEdit {
+    background-image: url('../../../../../../img/edit.svg');
+}
+
+.iconDelete {
+    background-image: url('../../../../../../img/delete.svg');
+}

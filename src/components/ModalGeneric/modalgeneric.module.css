@@ -1,0 +1,100 @@
+.wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+}
+
+.box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+    max-width: 450px;
+    padding: 45px 50px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    animation-name: fadeTopIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeTopIn {
+    0% {
+        opacity: 0%;
+        transform: translate(-50%, -100%);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.animateOut {
+    animation-name: fadeTopOut;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeTopOut {
+    0% {
+        opacity: 100%;
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        opacity: 0%;
+        transform: translate(-50%, -100%);
+    }
+}
+
+.title {
+    margin-bottom: 35px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.content {
+    width: 100%;
+}
+
+.btnClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    transition: background-color .2s ease-in-out;
+}
+
+.btnClose:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btnClose:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btnOk {
+    margin-right: 10px;
+    transition: background-color .2s ease-in-out;
+}
+
+.btnCancel {
+    position: relative;
+    font-size: 16px;
+    line-height: 17px;
+    color: #fff;
+    background-color: #999;
+    transition: background-color .2s ease-in-out;
+}
+
+.btnCancel:hover {
+    background-color: #777;
+}

@@ -1,0 +1,16 @@
+.btnClose {
+    transition: background-color .2s ease-in-out;
+}
+
+.btnClose:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btnDelete {
+    color: #fff;
+    background-color: #dc3e22;
+}
+
+.btnDelete:hover {
+    background-color: #ee735d;
+}
