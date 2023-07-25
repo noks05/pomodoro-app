@@ -90,7 +90,7 @@ export function filterStatisticData(data) {
     millisecondsToday - millisecondsTwoWeeks - millisecondsDay * numToday;
 
   let newData = [];
-  let i = data.length - 1;
+  let i = data ? data.length - 1 : -1;
 
   while (i >= 0) {
     const isThreeWeeks = data[i].dateCreate >= threeWeeksAgo;

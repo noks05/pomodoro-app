@@ -15,7 +15,7 @@ import "./main.global.css";
 function App() {
   const KEY_LS_STATISTIC = "statisticPomodoroApplicationSkillbox";
   // тестовые данные для статистики
-  // saveSessionData(KEY_LS_STATISTIC, testStatisticData);
+  saveSessionData(KEY_LS_STATISTIC, testStatisticData);
   // тестовый данные для статистики
   const KEY_LS_TASKS = "tasksPomodoroApplicationSkillbox";
   const KEY_LS_DARK_MODE = "darkModePomodoroApplicationSkillbox";
@@ -36,9 +36,9 @@ function App() {
   let defaultTimerTime = getLSData(KEY_LS_CHANGE_TIMER);
   if (!defaultTimerTime) {
     defaultTimerTime = {
-      timeWork: 1,
-      shortBreak: 2,
-      bigBreak: 3,
+      timeWork: 1500,
+      shortBreak: 300,
+      bigBreak: 900,
     };
     saveSessionData(KEY_LS_CHANGE_TIMER, defaultTimerTime);
   }
